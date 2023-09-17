@@ -1,0 +1,38 @@
+* {
+    font-family: "Montserrat";
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background: transparent;
+    padding: 0 20px;
+}
+#navbarSupportedContent ul {
+    flex-basis: 100%;
+    justify-content: center;
+}
+#navbarSupportedContent ul li {
+    margin: 10px;
+}
+.navbar .d-flex img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-item {
+    padding: 20px;
+}
+.d-flex img {
+    cursor: pointer;
+    scale: 0.8;
+}
+body {
+    background:  linear-gradient(#fff, #FBD1EE 120%);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100vw 70vh;
+    height: 100vh;
+}
