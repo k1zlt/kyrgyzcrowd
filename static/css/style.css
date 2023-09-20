@@ -1,0 +1,34 @@
+* {
+    font-family: "Montserrat";
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background: transparent;
+}
+#navbarSupportedContent ul {
+    flex-basis: 100%;
+    justify-content: center;
+}
+#navbarSupportedContent ul li {
+    margin-left: 10px;
+}
+.navbar .d-flex img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-item {
+    padding: 20px;
+}
+.d-flex img {
+    cursor: pointer;
+    scale: 0.8;
+}
+a.nav-link.current {
+    font-weight: bold;
+}
+

@@ -25,7 +25,10 @@ SECRET_KEY = "django-insecure-(dutk6d^-$$=)(ftqu47x9&m^cb8q)5shs4%t8-d%6j=$zrt4a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['k1zlt.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    '*',
+    'k1zlt.pythonanywhere.com'
+]
 
 
 # Application definition
@@ -119,6 +122,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -127,7 +133,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/k1zlt/fortuna/media'
+MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/k1zlt/fortuna/static'
+STATIC_ROOT = BASE_DIR / 'static_root'
 STATIC_URL = '/static/'
