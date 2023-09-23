@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .models import Project
+from .models import Project, Category
 
 # Create your views here.
 def all_projects(request):
-    projects = Project.objects.all()
     return render(request, 'projects/projects.html', {
-        'projects': projects
+        'projects': Project.objects.all(),
+        'categories' : Category.objects.all()
     })
 
 def project_detail(request, slug):
@@ -14,5 +14,5 @@ def project_detail(request, slug):
         'project': project
     })
     
-def new_project(request, slug):
+def category(request, slug):
     pass
